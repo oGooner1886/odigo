@@ -1,0 +1,66 @@
+@import "nullstyle";
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Lato Medium'), local('Lato-Medium'),
+         url(fonts/Lato-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Lato Bold'), local('Lato-Bold'),
+         url(fonts/Lato-Bold.ttf);
+
+}
+.wrapper{
+    max-width: 1060px;
+}
+
+.header {
+
+		// .header__container
+
+		&__container {
+		}
+
+		// .header__logo
+
+		&__logo {
+		}
+
+		// .header__menu
+
+		&__menu {
+		}
+}
+.menu {
+
+		// .menu__list
+
+		&__list {
+		}
+
+		// .menu__item
+
+		&__item {
+		}
+
+		// .menu__link
+
+		&__link {
+		}
+}

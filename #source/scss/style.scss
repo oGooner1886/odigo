@@ -1,41 +1,67 @@
 @import "nullstyle";
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+// @font-face {
+//     font-family: 'Lato';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-display: swap;
+//     src: local('Lato Regular'), local('Lato-Regular'),
+//          url(fonts/Lato-Regular.ttf);
+// }
+// @font-face {
+//     font-family: 'Lato';
+//     font-style: normal;
+//     font-weight: 500;
+//     font-display: swap;
+//     src: local('Lato Medium'), local('Lato-Medium'),
+//          url(fonts/Lato-Medium.ttf);
+
+// }
+
+// @font-face {
+//     font-family: 'Lato';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-display: swap;
+//     src: local('Lato Bold'), local('Lato-Bold'),
+//          url(fonts/Lato-Bold.ttf);
+
+// }
+
+body{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
-    src: local('Lato Regular'), local('Lato-Regular'),
-         url(fonts/Lato-Regular.ttf);
-}
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: local('Lato Medium'), local('Lato-Medium'),
-         url(fonts/Lato-Medium.ttf);
+    font-size: 16px;
+    line-height: 150%;
 
+
+
+color: #000000;
 }
 
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local('Lato Bold'), local('Lato-Bold'),
-         url(fonts/Lato-Bold.ttf);
-
-}
+//? ------HEADER BLOCK-----------------------------------------------------
 .wrapper{
     max-width: 1060px;
+    margin: 0 auto;
+    padding: 62px 0 0 0;
+
 }
-
 .header {
+    width: 100%;
+    
+    position: absolute;
 
+        
 		// .header__container
 
 		&__container {
-		}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
 
 		// .header__logo
 
@@ -45,22 +71,260 @@
 		// .header__menu
 
 		&__menu {
+            
 		}
 }
 .menu {
-
+    
 		// .menu__list
 
 		&__list {
+            display: flex;
 		}
 
 		// .menu__item
 
 		&__item {
+            padding: 0 0 0 82px;
 		}
+        &:last-child{
+            margin-right: 0;
+        }
 
 		// .menu__link
 
 		&__link {
+            color: #FFFFFF;
+            font-size: 18px;
+            line-height: 133%;
+            font-weight: 400;
 		}
+        
 }
+//? ------HEADER BLOCK-END----------------------------------------------------
+//! ------HERO BLOCK-----------------------------------------------------
+.hero{
+    // background: url(/img/heroheader/bg.png) no-repeat center;                                    test
+    // background: linear-gradient(180deg, rgba(53, 66, 103, 0.0001) 0%, #151824 95.04%);           test           
+    background: url(/img/heroheader/bg_Hero_grad.png) no-repeat center;
+    background-size: cover;
+    min-height: 135vh;
+    background-size: cover;
+    padding-top: 263px;
+}
+
+.main {
+
+    // .main__body
+
+    &__body {
+    }
+
+    // .main__title
+
+    &__title {
+        
+        max-width: 619px;
+        margin-bottom: 22px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+
+    // .main__subtitle
+
+    &__subtitle {
+        max-width: 546px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 59px;
+        
+    }
+
+    // .main__search
+
+    &__search {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+   
+}
+
+
+.search-form {
+    background-color: transparent;
+    background: url(/img/heroheader/Oval.svg) no-repeat left top 7px;
+    background-size: 20px;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    width: 297px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    &::placeholder{
+        color: #FFFFFF;
+    }
+    // .search-form__submit
+
+    &__submit {
+        background: #1B7DFF;
+        width: 171px;
+        height: 58px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        line-height: 121%;
+    }
+}
+//! ------HERO BLOCK-END----------------------------------------------------
+//* ------BENEFITS BLOCK-----------------------------------------------------
+.benefits {
+    
+    // .benefits__container
+
+    &__container {
+        max-width: 1262px;
+        background-color: #ffffff;
+        margin: 0 auto;
+        // height: 655px;
+        box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+        position: relative;
+        padding-bottom: 131px;
+        
+    }
+
+    // .benefits__title
+
+    &__title {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 120%;
+        color: #102746;
+        padding: 93px 100px 120px 100px;
+        transform: translateY(-223px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1;
+        margin-bottom: 120px;
+        
+    }
+
+    // .benefits__card
+
+    &__card {
+        position: relative;
+        display: flex;
+        z-index: 10;
+        flex-direction: row;
+        flex: 0 1 33.333%;
+        margin: 0 100px 0 100px;
+    }
+
+    // .benefits__item
+
+    &__item {
+        margin: 0 55px 0 0;
+    }
+}
+.item {
+
+    // .item__ico
+
+    &__ico {
+        margin-bottom: 37px;
+    }
+
+    // .item__title
+
+    &__title {
+        margin-bottom: 26px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 133%;
+        color: #000000;
+    }
+
+    // .item__subtitle
+
+    &__subtitle {
+        margin-bottom: 39px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+    }
+
+    // .item__learn
+
+    &__learn {
+        font-size: 16px;
+        line-height: 150%;
+        color: #006DFE;
+        text-transform: uppercase;
+        padding-right: 59px;
+        background: url(/img/Shape.svg) no-repeat right center;
+    }
+}
+//* ------BENEFITS BLOCK-END----------------------------------------------------
+//! ------INSPIRED BLOCK--------------------------------------------------------
+.inspired {
+    
+    // .inspired__container
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1262px;
+    }
+
+    // .inspired__block
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // .inspired__title
+
+    &__title {
+    }
+
+    // .inspired__view
+
+    &__view {
+    }
+
+    // .inspired__pic
+
+    &__pic {
+    }
+}
+.pic {
+
+    // .pic__card
+
+    &__card {
+    }
+}
+.card-fuji {
+}
+//! ------INSPIRED BLOCK-END----------------------------------------------------

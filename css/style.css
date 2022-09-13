@@ -324,12 +324,6 @@ body {
      object-fit: cover;
   transition: 0.15s all;
 }
-.inspired__card-sizemin {
-  height: 283px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.15s all;
-}
 
 .string-title {
   font-weight: 500;

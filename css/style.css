@@ -74,6 +74,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+img, embed, iframe, object, audio, video {
+  height: auto;
+  max-width: 100%;
+}
+
 /*------------------------------------*/
 body {
   font-family: "Lato";
@@ -119,8 +124,8 @@ body {
   background: url(/img/heroheader/bg_Hero_grad.png) no-repeat center;
   background-size: cover;
   min-height: 135vh;
-  background-size: cover;
   padding-top: 263px;
+  margin-bottom: 223px;
 }
 
 .main__title {
@@ -247,6 +252,10 @@ body {
   background: url(/img/Shape.svg) no-repeat right center;
 }
 
+.inspired {
+  margin-top: 131px;
+  margin-bottom: 131px;
+}
 .inspired__container {
   margin: 0 auto;
   max-width: 1262px;
@@ -255,4 +264,96 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.inspired__view {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #006DFE;
+  background: url(/img/Shape.svg) no-repeat right top 8px;
+  padding-right: 59px;
+}
+.inspired__cards1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.inspired__card {
+  overflow: hidden;
+  position: relative;
+}
+.inspired__card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.inspired__card:hover .inspired__card-size {
+  transform: scale(1.05);
+}
+.inspired__card-sizemin {
+  transform: scale(1.05);
+}
+.inspired__card-pic {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inspired__card-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+  transform: translate(32px, -80px);
+  z-index: 3;
+  position: absolute;
+}
+.inspired__card-size {
+  height: 354px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.15s all;
+}
+.inspired__card-sizemin {
+  height: 283px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.15s all;
+}
+
+.string-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 120%;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 36px;
+}
+.string-title::after {
+  content: "";
+  display: block;
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card-large {
+  grid-column: span 3;
+}
+
+.card-tiny {
+  grid-column: span 2;
 }

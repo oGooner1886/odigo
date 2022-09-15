@@ -359,9 +359,7 @@ color: #000000;
         &:hover &-size {
             transform: scale(1.05);
         }
-        &-sizemin{
-            transform: scale(1.05);
-        }
+        
         
     }
     &__card-pic{
@@ -426,5 +424,202 @@ color: #000000;
 }
 
 //! ------INSPIRED BLOCK-END----------------------------------------------------
+//? ------TOURS BLOCK-START-----------------------------------------------------
 
+.tours {
+    margin-bottom: 139px;
+    // .tours__container
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1262px;
+    }
+
+    // .tours__tottori
+
+    &__tottori {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 108px;
+        margin-bottom: 77px;
+    }
+}
+.tour {
+
+    // .tour__img
+
+    &__img {
+    }
+
+    // .tour__thumb
+
+    &__thumb {
+    }
+
+    // .tour__info
+
+    &__info {
+        padding-left: 47px;
+        
+    }
+
+    // .tour__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+        color: #102746;
+        margin-bottom: 85px;
+    }
+
+    // .tour__description
+
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #102746;
+        margin-bottom: 58px;
+    }
+
+    // .tour__link
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: right;
+        color: #006DFE;
+        background: url(/img/Shape.svg) no-repeat right top 6px;
+        padding-right: 59px;
+        
+    }
+}
+//? ------TOURS BLOCK-END--------------------------------------------------------
+//TODO ---PLACES BLOCK-START-----------------------------------------------------
+
+.places {
+
+    // .places__container
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1262px;
+    }
+
+    // .places__title
+
+    &__title {
+    }
+
+    // .places__main
+
+    &__main {
+        margin-top: 54px;
+    }
+
+    // .places__cards
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 57px;
+        
+    }
+
+    // .places__card
+
+    &__card {
+        width: 386px;
+        
+        
+    }
+
+    &__card-wrap{
+    }
+    // .places__card-img
+
+    &__card-img {
+        margin-bottom: 45px;
+        height: 377px;
+        
+    }
+
+    // .places__card-info
+
+    &__card-info {
+        // display: flex;
+        // justify-content: space-between;
+        height: 55px;
+        width: 386px;
+        background: rgba(21, 24, 36, 0.6);
+        position: relative;
+        top: -100px;
+        
+        
+    }
+
+    // .places__card-title
+
+    &__card-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        color: #FFFFFF;
+        padding: 16px 0 15px 25px;
+        
+    }
+
+    &__card-title span{
+        margin-left: 157px;
+        
+        }
+        &__card-title img{
+            margin-right: 14px;
+            }
+
+
+
+        
+    // .places__card-description
+
+    &__card-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #102746;
+        padding: 0 0 31px 0;
+        position: relative;
+        top: -62px;
+        z-index: 199;
+        
+    }
+
+
+    // .places__see
+
+    &__see {
+        background: #006DFE;
+        width: 118px;
+        height: 42px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding: 12px 19px 11px;
+    }
+
+    &__card-link {
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+.string-title {
+    
+}
 

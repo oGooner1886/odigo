@@ -297,9 +297,6 @@ body {
 .inspired__card:hover .inspired__card-size {
   transform: scale(1.05);
 }
-.inspired__card-sizemin {
-  transform: scale(1.05);
-}
 .inspired__card-pic {
   width: 100%;
   height: 100%;
@@ -350,4 +347,113 @@ body {
 
 .card-tiny {
   grid-column: span 2;
+}
+
+.tours {
+  margin-bottom: 139px;
+}
+.tours__container {
+  margin: 0 auto;
+  max-width: 1262px;
+}
+.tours__tottori {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  margin-bottom: 77px;
+}
+
+.tour__info {
+  padding-left: 47px;
+}
+.tour__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  color: #102746;
+  margin-bottom: 85px;
+}
+.tour__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102746;
+  margin-bottom: 58px;
+}
+.tour__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+  color: #006DFE;
+  background: url(/img/Shape.svg) no-repeat right top 6px;
+  padding-right: 59px;
+}
+
+.places__container {
+  margin: 0 auto;
+  max-width: 1262px;
+}
+.places__main {
+  margin-top: 54px;
+}
+.places__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+.places__card {
+  width: 386px;
+}
+.places__card-img {
+  margin-bottom: 45px;
+  height: 377px;
+}
+.places__card-info {
+  height: 55px;
+  width: 386px;
+  background: rgba(21, 24, 36, 0.6);
+  position: relative;
+  top: -100px;
+}
+.places__card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding: 16px 0 15px 25px;
+}
+.places__card-title span {
+  margin-left: 157px;
+}
+.places__card-title img {
+  margin-right: 14px;
+}
+.places__card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102746;
+  padding: 0 0 31px 0;
+  position: relative;
+  top: -62px;
+  z-index: 199;
+}
+.places__see {
+  background: #006DFE;
+  width: 118px;
+  height: 42px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 12px 19px 11px;
+}
+.places__card-link {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: relative;
+  top: 0;
+  left: 0;
 }

@@ -268,15 +268,75 @@
         </div>
     </section>
     <div class="video">
-        asdasd
+        <div class="video__container">
+            <div class="video__item"></div>
+            <iframe class="video__element" src="https://www.youtube.com/embed/vU9e3kL9ahA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
     </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__block">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="/img/footer_odigo-Logo.svg" alt="odigo">
+                </a>
+            </div>
+            <div class="footer__desc">
+                <div class="footer__desc-first">
+                    <ul>
+                        <li>Company</li>
+                        <li>About </li>
+                        <li>Team</li>
+                        <li>Team</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer__desc-second">
+                    <ul>
+                        <li>Company</li>
+                        <li>About </li>
+                        <li>Team</li>
+                        <li>Team</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer__desc-third">
+                    <ul>
+                        <li>Company</li>
+                        <li>About </li>
+                        <li>Team</li>
+                        <li>Team</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
     
 
 
 
 
+<script>
+    
 
-    <link rel="stylesheet" href="/#source/js/index.js">
+    (function () {
+    const header = document.querySelector('.header');
+    window.onscroll = () => {
+        if (window.pageYOffset > 250) {
+            header.classList.add('active')
+        }else{
+            header.classList.remove('active');
+        }
+    };
+}());
+
+
+
+</script>
+    <!-- <link rel="stylesheet" href="/source/js/index.js"> -->
 </body>
 
 </html>

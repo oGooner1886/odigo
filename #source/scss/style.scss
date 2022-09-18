@@ -51,13 +51,19 @@ color: #000000;
 .header {
     width: 100%;
     
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &_active{
+        background: #0E1D28;
+    }
 
         
 		// .header__container
 
 		&__container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             
@@ -108,9 +114,9 @@ color: #000000;
     // background: linear-gradient(180deg, rgba(53, 66, 103, 0.0001) 0%, #151824 95.04%);           test           
     background: url(/img/heroheader/bg_Hero_grad.png) no-repeat center;
     background-size: cover;
-    min-height: 135vh;
+    min-height: 100vh;
     padding-top: 263px;
-    margin-bottom: 223px;
+    // margin-bottom: 223px;
 }
 
 .main {
@@ -155,6 +161,8 @@ color: #000000;
         flex-wrap: wrap;
         
     }
+
+
    
 }
 
@@ -174,6 +182,7 @@ color: #000000;
     &::placeholder{
         color: #FFFFFF;
     }
+    
     // .search-form__submit
 
     &__submit {
@@ -187,6 +196,14 @@ color: #000000;
         color: #FFFFFF;
         text-transform: uppercase;
         line-height: 121%;
+        transition: 0.5s;
+        &:hover{
+            letter-spacing: 1px;
+            background-color: #006DFE;
+            color: white;
+            box-shadow: 0 0 35px rgb(151, 162, 255);
+        }
+        
     }
 }
 //! ------HERO BLOCK-END----------------------------------------------------
@@ -204,8 +221,21 @@ color: #000000;
         position: relative;
         padding-bottom: 131px;
         
+        
+        
     }
 
+    &__block{
+        width: 100%;
+        padding: 50px 100px 120px 100px;
+        z-index: 11;
+        position: absolute;
+        background-color: #FFFFFF;
+        top: 0;
+        left: 0;
+        transform: translateY(-150px);
+        z-index: 9999;
+    }
     // .benefits__title
 
     &__title {
@@ -215,15 +245,14 @@ color: #000000;
         font-size: 35px;
         line-height: 120%;
         color: #102746;
-        padding: 93px 100px 120px 100px;
-        transform: translateY(-223px);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        
+        
+        
+        
+        
         background-color: #ffffff;
-        z-index: 1;
-        margin-bottom: 120px;
+        
+        
         
     }
 
@@ -236,6 +265,7 @@ color: #000000;
         flex-direction: row;
         flex: 0 1 33.333%;
         margin: 0 100px 0 100px;
+        padding: 65px 0 0 0 ;
     }
 
     // .benefits__item
@@ -282,7 +312,12 @@ color: #000000;
         text-transform: uppercase;
         padding-right: 59px;
         background: url(/img/Shape.svg) no-repeat right center;
-        
+        transition: .3s;
+        &:hover{
+            
+            color: #0064e7;
+            letter-spacing: 0.5px;
+        }
     }
 }
 //* ------BENEFITS BLOCK-END----------------------------------------------------
@@ -330,6 +365,12 @@ color: #000000;
         color: #006DFE;
         background: url(/img/Shape.svg) no-repeat right top 8px;
         padding-right: 59px;
+        transition: .3s;
+        &:hover{
+            
+            color: #0064e7;
+            letter-spacing: 0.5px;
+        }
         
     }
 
@@ -493,6 +534,13 @@ color: #000000;
         color: #006DFE;
         background: url(/img/Shape.svg) no-repeat right top 6px;
         padding-right: 59px;
+        transition: .3s;
+        &:hover{
+            
+            color: #0064e7;
+            letter-spacing: 0.5px;
+        }
+        
         
     }
 }
@@ -500,7 +548,7 @@ color: #000000;
 //TODO ---PLACES BLOCK-START-----------------------------------------------------
 
 .places {
-
+    margin-bottom: 144px;
     // .places__container
 
     &__container {
@@ -608,6 +656,14 @@ color: #000000;
         line-height: 19px;
         color: #FFFFFF;
         padding: 12px 19px 11px;
+        transition: 0.1s;
+        
+        &:hover{
+            letter-spacing: 0.5px;
+            background-color: #006DFE;
+            color: white;
+            box-shadow: 0 0 35px rgb(151, 162, 255);
+        }
     }
 
     &__card-link {
@@ -617,6 +673,7 @@ color: #000000;
         position: relative;
         top: 0;
         left: 0;
+        
     }
 }
 .string-title {

@@ -3,7 +3,8 @@
 
 <head>
     <!--Кодировка страницы-->
-    <meta http-equiv="Content-type" content="text/html;charsen=UTF-8" 
+    <meta http-equiv="Content-type" content="text/html;charsen=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Заголовок страницы в браузере-->
     <title>Odigo</title>
 
@@ -37,7 +38,17 @@
                             <a href="#" class="menu__link">Sign in</a>
                         </li>
                     </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
                 </nav>
+                <!-- !-BURGER-! -->
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -319,23 +330,8 @@
 
 
 
-<script>
-    
-
-    (function () {
-    const header = document.querySelector('.header');
-    window.onscroll = () => {
-        if (window.pageYOffset > 250) {
-            header.classList.add('active')
-        }else{
-            header.classList.remove('active');
-        }
-    };
-}());
-
-
-
-</script>
+<script src="/source/js/menu_active.js"></script>
+<script src="/source/js/burgerMenu.js"></script>
     <!-- <link rel="stylesheet" href="/source/js/index.js"> -->
 </body>
 

@@ -825,7 +825,10 @@ width: 100%;
 }
 
 // ! -media
+
+
 @media screen and (max-width: 767px){
+    
     .header__burger {
         display: block;
         margin: 0 25px 0 0;
@@ -884,4 +887,67 @@ width: 100%;
     .header__nav-close-line:last-child{
         transform: translateY(-50%) rotate(-45deg);
     }
+    .benefits__title{
+        font-size: 50px;
+    }
+    .benefits__card{
+        flex-direction: column;
+        margin: 0 50px 0 50px;
+    }
+    .benefits__item{
+        padding: 0 0 0 35px;
+    }
+    .item__title{
+        font-size: 36px;
+    }
+    .item__subtitle{
+        font-size: 32px;
+    }
+    .item__learn{
+        font-size: 32px;
+    }
+    .inspired__title{
+        font-size: 50px;
+    }
+    .inspired__view{
+        font-size: 32px;
+        background: url(/img/Shape.svg) no-repeat right top 20px;
+    }
+    .card-large{
+        grid-column: span 6;
+    }
+    .inspired__card-size {
+        height: 100%;
+    }
+    .inspired__card-title {
+        font-size: 75px;
+        
+        transform: translate(32px, -110px);
+    }
+    .card-tiny{
+        grid-column: span 6;
+    }
+    .tours__tottori{
+        // grid-template-columns: repeat(1, 1fr);
+    }
+    .img-start{
+        grid-row-start: -1;
+    }
+    .tour__title{
+        font-size: 50px;
+    }
+    .tour__description{
+        font-size: 36px;
+    }
+    .tour__link{
+        font-size: 36px;
+    }
+    .tour__img{
+        padding-top: 150px;
+    }
+    .places__title{
+        font-size: 50px;
+    }
+    
+
 }

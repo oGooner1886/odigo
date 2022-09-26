@@ -23,8 +23,8 @@
                         <img src="/img/heroheader/odigo-Logo.svg" alt="Odigo">
                     </a>
                 </div>
-                <nav class="header__menu">
-                    <ul class="menu__list">
+                <nav class="header__menu cd-main-nav js-main-nav" >
+                    <ul class="menu__list cd-main-nav__list js-signin-modal-trigger">
                         <li class="menu__item">
                             <a href="#" class="menu__link">Articles</a>
                         </li>
@@ -35,9 +35,45 @@
                             <a href="#" class="menu__link">Videos</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Sign in</a>
+                            <a href="#" class="menu__link cd-main-nav__item cd-main-nav__item--signin" data-signin="login">Sign in</a>
                         </li>
                     </ul>
+                    <!--? ---MODAL--- -->
+                    <div class="cd-signin-modal js-signin-modal"> <!-- this is the entire modal form, including the background -->
+                        <div class="cd-signin-modal__container"> <!-- this is the container wrapper -->
+                            <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+                                <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
+                                
+                            </ul>
+                
+                            <div class="cd-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
+                                <form class="cd-signin-modal__form">
+                                    <p class="cd-signin-modal__fieldset">
+                                        <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin-email">E-mail</label>
+                                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-email" type="email" placeholder="E-mail">
+                                        <span class="cd-signin-modal__error">Error message here!</span>
+                                    </p>
+                
+                                    <p class="cd-signin-modal__fieldset">
+                                        <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signin-password">Password</label>
+                                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-password" type="text"  placeholder="Password">
+                                        <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+                                        <span class="cd-signin-modal__error">Error message here!</span>
+                                    </p>
+                
+                                    <p class="cd-signin-modal__fieldset">
+                                        <input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
+                                        <label for="remember-me">Remember me</label>
+                                    </p>
+                
+                                    <p class="cd-signin-modal__fieldset">
+                                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
+                                    </p>
+                                </form>
+                                
+                                <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your password?</a></p>
+                            </div>
+                    <!--? ---MODAL--- -->
                     <div class="header__nav-close">
                         <span class="header__nav-close-line"></span>
                         <span class="header__nav-close-line"></span>
@@ -160,7 +196,7 @@
             
         </div>
     </section>
-    <div class="tours">
+    <div class="tours" id="articles">
         <div class="tours__container">
             <div class="tours__tottori tour">
                 <div class="tour__img">
@@ -185,7 +221,7 @@
             </div>
         </div>
     </div>
-    <section class="places">
+    <section class="places" id="locations">
         <div class="places__container">
             <h3 class="places__title string-title">Today top places to visit</h3>
             <div class="places__main">
@@ -278,7 +314,7 @@
             </div>
         </div>
     </section>
-    <div class="video">
+    <div class="video" id="videos">
         <div class="video__container">
             <div class="video__item"></div>
             <iframe class="video__element" src="https://www.youtube.com/embed/vU9e3kL9ahA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -332,6 +368,8 @@
 
 <script src="/source/js/menu_active.js"></script>
 <script src="/source/js/burgerMenu.js"></script>
+<script src="/source/js/scroll.js"></script>
+<script src="/source/js/signIn.js"></script>
     <!-- <link rel="stylesheet" href="/source/js/index.js"> -->
 </body>
 
